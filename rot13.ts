@@ -1,14 +1,14 @@
 const dict = "ABCDEFGHIJKLMNOPORSTUVWXYZ";
 const separater = "";
 
-const getIndex = (index: number) => {
-  return index + 13 >= 26 ? index + 13 - 26 : index + 13;
+const getIndex = (index: number, offset: number) => {
+  return index + offset >= 26 ? index + offset - 26 : index + offset;
 };
 
 const getLetterWithOffset = (letter: string) => {
   const index = dict.indexOf(letter);
 
-  return dict[getIndex(index)];
+  return dict[getIndex(index, 13)];
 };
 
 const transform = (letter: string) => {
