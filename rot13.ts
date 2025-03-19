@@ -7,8 +7,8 @@ const getIndex = (index: number, offset: number) => {
 
 const getLetterWithOffset = (letter: string) => {
   const index = dict.indexOf(letter);
-
-  return dict[getIndex(index, 13)];
+  const shift = 13;
+  return dict[getIndex(index, shift)];
 };
 
 const transform = (letter: string) => {
