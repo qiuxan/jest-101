@@ -1,6 +1,6 @@
-export const convert = (str: string) => {
-  const letters = "ABCDEFGHIJKLMNOPORSTUVWXYZ";
+const letters = "ABCDEFGHIJKLMNOPORSTUVWXYZ";
 
+export const convert = (str: string) => {
   return str
     .split("")
     .map((c) => {
