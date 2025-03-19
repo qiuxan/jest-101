@@ -1,8 +1,8 @@
 const letters = "ABCDEFGHIJKLMNOPORSTUVWXYZ";
 const separater = "";
 
-const transform = (c: string) => {
-  const index = letters.indexOf(c);
+const transform = (letter: string) => {
+  const index = letters.indexOf(letter);
   if (index !== -1) {
     if (index + 13 >= 26) {
       return letters[index + 13 - 26];
@@ -10,7 +10,7 @@ const transform = (c: string) => {
       return letters[index + 13];
     }
   }
-  return c;
+  return letter;
 };
 
 export const convert = (str: string) => {
