@@ -1,5 +1,6 @@
 const dict = "ABCDEFGHIJKLMNOPORSTUVWXYZ";
 const separater = "";
+const shift = 13;
 
 const getIndex = (index: number, offset: number) => {
   return index + offset >= 26 ? index + offset - 26 : index + offset;
@@ -7,7 +8,6 @@ const getIndex = (index: number, offset: number) => {
 
 const getLetterWithOffset = (letter: string) => {
   const index = dict.indexOf(letter);
-  const shift = 13;
   return dict[getIndex(index, shift)];
 };
 
