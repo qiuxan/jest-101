@@ -1,6 +1,4 @@
-const dict = "ABCDEFGHIJKLMNOPORSTUVWXYZ";
-const separater = "";
-const shift = 13;
+import { dict , separater, shift } from "./constants"; 
 
 const getIndex = (index: number, offset: number) => {
   return index + offset >= 26 ? index + offset - 26 : index + offset;
