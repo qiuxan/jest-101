@@ -1,8 +1,8 @@
 const letters = "ABCDEFGHIJKLMNOPORSTUVWXYZ";
-
+const separater = "";
 export const convert = (str: string) => {
   return str
-    .split("")
+    .split(separater)
     .map((c) => {
       const index = letters.indexOf(c);
       if (index !== -1) {
@@ -15,5 +15,5 @@ export const convert = (str: string) => {
 
       return c;
     })
-    .join("");
+    .join(separater);
 };
